@@ -1,2 +1,3 @@
-# python_practice
-Some Python practice questions
+# leet_codes Practise
+Some leet_codes
+practice questions
