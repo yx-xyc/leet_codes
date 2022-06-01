@@ -1,10 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <string.h>
 #include <map>
 #include <unordered_map>
-#include <printf.h>
 using namespace std;
 int romanToInt(string s) {
     unordered_map<char, int> encoder = {
