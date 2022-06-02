@@ -18,7 +18,9 @@ vector<int> findAnagrams(string s, string p) {
     vector<int> result;
     while (right<s.size()){
         char c = s[right];
+        right++;
         if (needs.count(c)){
+            window[c]++;
             if (needs[c]==window[c]) valid++;
         }
         while (right-left>=p.size()){
@@ -31,17 +33,18 @@ vector<int> findAnagrams(string s, string p) {
                 if(window[d]==needs[d]) valid--;
                 window[d]--;
             }
-
         }
-
     }
+    return result;
 }
 
 int main(void){
-    string s = "cbaebabacd";
-    string t = "abc";
+    string s = "abab";
+    string t = "ab";
     vector<int> result = findAnagrams(s, t);
-    for (int idx:result){
-        cout << idx << endl;
-    }
+    // for (int idx:result){
+    //     cout << idx << endl;
+    // }
+    float a = (2+3)/2;
+    cout << a << endl;
 }
