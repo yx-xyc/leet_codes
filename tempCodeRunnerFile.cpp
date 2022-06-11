@@ -1,8 +1,5 @@
-    void printPreSum(){
-        for (int i=0;i<preSum.size();i++){
-            for (int j=0;j<preSum[0].size();j++){
-                cout << preSum[i][j] << '\t';
-            }
-            cout << endl;
-        }
+    int length = nums1.size();
+    priority_queue<node, vector<node>, cmp> pq;
+    for (int i=0;i<length;i++){
+        pq.push(node(i,nums2[i]));
     }

@@ -10,7 +10,6 @@ using namespace std;
 // 3. What to update when we shrink the window?
 // 4. For the final result, should it be updated when we expand window or shrink window?
 
-
 bool checkInclusion(string s1, string s2) {
     unordered_map<char, int> need, window;
     for (char c:s1) need[c]++;
